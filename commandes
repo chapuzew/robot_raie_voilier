@@ -1,0 +1,30 @@
+ping 192.168.1.177
+
+
+
+
+(on peut faire "time curl ..." pour savoir le temps de reponse sinon on fait juste "curl...")
+
+
+
+A l'arrêt :
+time curl "http://192.168.1.177/?a=0&b=0&c=0&d=0&e=0&f=0&mode=0"
+
+
+
+En action pour chaque modes (// a = angle translation (degrés), b = angle rotation (degrés), c = periode en radiant/seconde, d = dephasage entre les deux ailes, e/f = pourcentage de la periode que prend le temps de monté/descante) :
+
+time curl "http://192.168.1.177/?a=44&b=0&c200&d=0&e=0&f=0&mode=1"
+
+time curl "http://192.168.1.177/?a=45&b=0&c=60&d=0&e=0&f=0&mode=2"
+
+time curl "http://192.168.1.177/?a=30&b=10&c=80&d=0&e=0&f=0&mode=3"
+
+time curl "http://192.168.1.177/?a=30&b=0&c=20&d=0&e=0.7&f=0.7&mode=4"
+
+time curl "http://192.168.1.177/?a=30&b=0&c=20&d=0&e=0.4&f=0.4&mode=5"
+
+time curl "http://192.168.1.177/?a=30&b=0&c=200&d=0&e=0.4&f=0.4&mode=6"
+
+time curl "http://192.168.1.177/?a=0&b=0&c=0&d=0&e=0&f=0&mode=7"
+
